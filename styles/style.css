@@ -3,8 +3,110 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #1c5380 50%,  white 50%);
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+height: 100vh;
+}
+section{
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContainer{
+  width: 30%;
+  margin-left: 50px;
+}
+
+.badges{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.storeContainer{
+  margin-top: 40px;
+}
+
+.storeContainer > img:nth-of-type(1){
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+
+.storeContainer > img{
+  margin-bottom: 30px;
+}
+
+
+h1{
+  width: 250px;
+}
+
+.description p {
+  width: 345px;
+}
+
+button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: #1c5380;
+  color: white;
+  box-shadow: rgba(17, 17, 18, 0.6) 0px 7px 29px 0px;
+  border-radius: 4px;
+  border: #4b4e51;
+}
+
+button > span {
+  text-align: center;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  color: #1c5380;
+}
+
+ul > li{
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+ul > li:last-of-type{
+  color: lightgray;
+}
+.description{
+  background-color: white;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.description > h1, .description > p {
+  margin-left: 30px;
+}
+
+.description > h1 {
+  padding-top: 25px;
+  color: #06365f
+}
+
